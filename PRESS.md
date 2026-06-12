@@ -12,7 +12,7 @@
 | Platform | macOS 14+, universal (Apple silicon + Intel), native SwiftUI + AppKit |
 | Price | Free to try (5 stashes) · one-time $7.99 unlock · no subscription |
 | Availability | Mac App Store, all regions except mainland China and the EU |
-| App Store | Launching **June 25, 2026** — the link will appear here on launch day |
+| App Store | Launching **June 16, 2026** — the link will appear here on launch day |
 | Privacy | Zero network requests; no account, no analytics; App Store privacy label "Data Not Collected"; App Sandbox |
 | Developer | Bailuo — independent solo developer |
 | Support | https://github.com/baiyisn123/dropsnooze-support |
