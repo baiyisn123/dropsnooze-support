@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DropSnooze — Snooze any file, link or note. It comes back and opens.</title>
+<meta name="description" content="DropSnooze is a Mac menu-bar app for things you want to deal with later. Drag anything onto the menu bar, pick a time — it comes back and opens the real thing. 100% on your Mac.">
+<meta property="og:title" content="DropSnooze — Snooze anything. It comes back — and opens.">
+<meta property="og:description" content="Drag any file, link, or note to the Mac menu bar, pick a time — it comes back and opens on time. No account, no cloud. One-time purchase.">
+<meta property="og:image" content="assets/1-wheel.jpg">
+<style>
+:root{
+  --bg:#fbfafd; --ink:#1d1a2e; --muted:#5e5973; --card:#ffffff; --line:rgba(29,26,46,.10);
+  --brand1:#1F1A52; --brand2:#6B338C; --pill-bg:rgba(107,51,140,.10); --pill-ink:#52256e;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#121018; --ink:#f0edf7; --muted:#a59fb8; --card:#1b1824; --line:rgba(240,237,247,.10);
+         --pill-bg:rgba(175,124,210,.16); --pill-ink:#d9bdf0; }
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;
+     background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:920px;margin:0 auto;padding:0 24px}
+header.hero{background:linear-gradient(135deg,var(--brand1),var(--brand2));color:#f6f3ff;
+            padding:88px 0 72px;text-align:center}
+.hero img.icon{width:108px;height:108px;border-radius:24px;box-shadow:0 18px 60px rgba(0,0,0,.35)}
+.hero h1{font-size:clamp(30px,5vw,46px);font-weight:700;letter-spacing:-.02em;margin:28px auto 14px;max-width:760px}
+.hero p.sub{font-size:clamp(16px,2.4vw,19px);color:rgba(246,243,255,.82);max-width:640px;margin:0 auto}
+.pill{display:inline-block;margin-top:30px;padding:10px 22px;border-radius:999px;
+      background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+      font-size:15px;font-weight:600;color:#fff}
+.pricepill{display:block;margin-top:14px;font-size:14px;color:rgba(246,243,255,.75)}
+section{padding:64px 0}
+.shot{display:block;width:100%;border-radius:14px;border:1px solid var(--line);
+      box-shadow:0 24px 80px rgba(31,26,82,.16)}
+.hero-shot{margin-top:-36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:20px}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.pillar{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.pillar h3{font-size:18px;font-weight:650;margin-bottom:8px}
+.pillar p{font-size:15px;color:var(--muted)}
+h2{font-size:26px;font-weight:700;letter-spacing:-.01em;margin-bottom:10px}
+.lead{color:var(--muted);max-width:680px}
+.pricing{background:var(--card);border:1px solid var(--line);border-radius:18px;
+         padding:34px;text-align:center}
+.pricing .big{font-size:30px;font-weight:700}
+.pricing p{color:var(--muted);margin-top:6px}
+.links{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;justify-content:center}
+.links a{display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid var(--line);
+         color:var(--ink);text-decoration:none;font-size:15px;font-weight:550;background:var(--card)}
+.links a:hover{border-color:var(--brand2)}
+footer{border-top:1px solid var(--line);padding:34px 0 60px;color:var(--muted);font-size:14px;text-align:center}
+footer a{color:inherit}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="icon" src="assets/icon-512.png" alt="DropSnooze app icon">
+    <h1>Snooze anything.<br>It comes back — and opens.</h1>
+    <p class="sub">Drag any file, link, note, or image onto your Mac's menu bar and pick a time.
+       It disappears — then comes back and opens the real thing, exactly when you asked.</p>
+    <span class="pill">Launching June 25, 2026 · Mac App Store</span>
+    <span class="pricepill">Free to try · $7.99 one-time · No subscription</span>
+  </div>
+</header>
+
+<div class="wrap">
+  <section style="padding-top:0">
+    <img class="shot hero-shot" src="assets/1-wheel.jpg" alt="Dragging a file onto the DropSnooze menu-bar icon opens a wheel of snooze times">
+  </section>
+
+  <section style="padding-top:0">
+    <div class="pillars">
+      <div class="pillar"><h3>One gesture</h3>
+        <p>"Deal with this later" shouldn't take six steps in a to-do app. Drag, hold, drop on a time — done.</p></div>
+      <div class="pillar"><h3>It comes back — and opens</h3>
+        <p>At the time you picked, the actual file or page reopens in front of you. Not a reminder about it.</p></div>
+      <div class="pillar"><h3>100% on your Mac</h3>
+        <p>Zero network requests. No account, no cloud, no analytics. Files are never copied — originals reopen in place.</p></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <h2>Quiet by design</h2>
+    <p class="lead">A native SwiftUI + AppKit menu-bar app. No projects, no tags, no inbox to keep at zero —
+       just a small wheel of times and a timeline of everything you've parked.</p>
+    <div class="grid">
+      <img class="shot" src="assets/2-card.jpg" alt="A snoozed item resurfaces as a small card with Open and Reschedule">
+      <img class="shot" src="assets/3-list.jpg" alt="The DropSnooze inbox lists everything you have parked, on a timeline">
+      <img class="shot" src="assets/4-settings.jpg" alt="Settings: everything stays on your Mac">
+    </div>
+  </section>
+
+  <section>
+    <div class="pricing">
+      <div class="big">Free to try · $7.99 once</div>
+      <p>Stash 5 things for free. One purchase unlocks unlimited — no subscription, ever.</p>
+      <p>macOS 14+ · Apple silicon &amp; Intel · English &amp; 简体中文</p>
+      <div class="links">
+        <a href="https://github.com/baiyisn123/dropsnooze-support/blob/main/FAQ.md">FAQ</a>
+        <a href="https://github.com/baiyisn123/dropsnooze-support/blob/main/PRESS.md">Press kit</a>
+        <a href="https://github.com/baiyisn123/dropsnooze-support/blob/main/PRIVACY.md">Privacy policy</a>
+        <a href="mailto:sllbailuo@outlook.com">Support</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    DropSnooze — an independent Mac app · <a href="mailto:sllbailuo@outlook.com">sllbailuo@outlook.com</a><br>
+    This page loads nothing from third parties — like the app, it keeps to itself.
+  </div>
+</footer>
+
+</body>
+</html>
