@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Press Kit — DropSnooze</title>
+<link rel="icon" href="assets/icon-512.png">
+<style>
+:root{--bg:#fbfafd;--card:#fff;--ink:#1d1a2e;--muted:#5e5973;--faint:#8d87a0;--line:rgba(29,26,46,.10)}
+@media (prefers-color-scheme: dark){:root{--bg:#121018;--card:#1b1824;--ink:#f0edf7;--muted:#a59fb8;--faint:#7d7691;--line:rgba(240,237,247,.10)}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.mark{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;text-decoration:none}
+.mark img{width:28px;height:28px;border-radius:7px}
+nav .links{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+nav .links a{text-decoration:none}
+nav .links a:hover{color:var(--ink)}
+h1{font-size:30px;font-weight:700;letter-spacing:-.01em;margin:36px 0 6px}
+.lede{color:var(--muted);margin-bottom:26px}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin-bottom:8px}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{width:150px;color:var(--muted);white-space:nowrap}
+h2{font-size:19px;font-weight:600;margin:30px 0 8px}
+p,li{font-size:15px;color:var(--muted);margin-bottom:12px}
+ul{margin:0 0 12px 20px}
+li{margin-bottom:6px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.shots img{width:100%;display:block;border-radius:10px;border:1px solid var(--line)}
+@media (max-width:600px){.shots{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 44px;font-size:13px;color:var(--faint)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="mark" href="./"><img src="assets/icon-512.png" alt="">DropSnooze</a>
+  <span class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="press.html">Press</a></span>
+</nav>
+
+<h1>Press Kit</h1>
+<p class="lede">For journalists, bloggers, and newsletter writers. Everything on this page may be quoted or reused.
+Email <a href="mailto:sllbailuo@outlook.com" style="text-decoration:underline"><b>sllbailuo@outlook.com</b></a> for questions or a promo code to try the full app.</p>
+
+<h2>Fact sheet</h2>
+<table>
+<tr><td>Product</td><td>DropSnooze: Snooze Anything</td></tr>
+<tr><td>One-line pitch</td><td>Snooze any file, link or note — it comes back and opens on time.</td></tr>
+<tr><td>Platform</td><td>macOS 14+, universal (Apple silicon + Intel), native SwiftUI + AppKit</td></tr>
+<tr><td>Price</td><td>Free to try (5 stashes) · one-time $7.99 unlock · no subscription</td></tr>
+<tr><td>Availability</td><td>Mac App Store, all regions except mainland China and the EU. Launching <b>June 25, 2026</b> — the store link will appear here on launch day.</td></tr>
+<tr><td>Privacy</td><td>Zero network requests; no account, no analytics; privacy label "Data Not Collected"; App Sandbox</td></tr>
+<tr><td>Developer</td><td>Bailuo — independent solo developer</td></tr>
+<tr><td>Contact</td><td><a href="mailto:sllbailuo@outlook.com">sllbailuo@outlook.com</a></td></tr>
+</table>
+
+<h2>What it does</h2>
+<p>DropSnooze turns "I'll deal with this later" into a single gesture on the Mac. Drag any file, link, note, or image onto the menu-bar icon, hold for a moment, and a wheel of times springs open — Tonight, Tomorrow, 2 Hours, or a custom time. The item disappears from your way, and when the time comes it resurfaces and opens the actual file or page, not just a reminder about it.</p>
+<p>Task managers turn "later" into a six-step chore; drag shelves hold things but never bring them back. DropSnooze keeps the speed of a shelf and adds the return trip.</p>
+
+<h2>Notable details</h2>
+<ul>
+<li>The menu-bar icon itself is a live drop target with spring-loading (AppKit <code>NSStatusItem</code> + custom view).</li>
+<li>Files are never copied or moved — security-scoped bookmarks reopen the original in place, fully sandboxed.</li>
+<li>There is no networking code in the app. Purchases go through StoreKit, which is system-mediated.</li>
+<li>VoiceOver and Reduce Motion supported. Localized in English and Simplified Chinese.</li>
+</ul>
+
+<h2>Assets</h2>
+<p>Full-resolution icon and screenshots (2560×1600): <a href="press/icon-1024.png" style="text-decoration:underline">icon</a> ·
+<a href="press/1-wheel.png" style="text-decoration:underline">time wheel</a> ·
+<a href="press/2-card.png" style="text-decoration:underline">resurface card</a> ·
+<a href="press/3-list.png" style="text-decoration:underline">inbox</a> ·
+<a href="press/4-settings.png" style="text-decoration:underline">settings</a>.
+Simplified Chinese versions available on request.</p>
+<div class="shots">
+  <img src="assets/1-wheel.jpg" alt="DropSnooze time wheel">
+  <img src="assets/2-card.jpg" alt="DropSnooze resurface card">
+</div>
+
+<h2>Promo codes</h2>
+<p>Review codes are available — email <a href="mailto:sllbailuo@outlook.com" style="text-decoration:underline">sllbailuo@outlook.com</a> with your outlet or channel and we'll send one over.</p>
+
+<footer>© 2026 DropSnooze · Bailuo · <a href="./">Home</a></footer>
+</div>
+</body>
+</html>

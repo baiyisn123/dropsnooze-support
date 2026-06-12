@@ -9,21 +9,27 @@
 <meta property="og:description" content="Drag any file, link, or note to the Mac menu bar, pick a time — it comes back and opens on time. No account, no cloud. One-time purchase.">
 <meta property="og:url" content="https://baiyisn123.github.io/dropsnooze-support/">
 <meta property="og:image" content="https://baiyisn123.github.io/dropsnooze-support/assets/1-wheel.jpg">
+<link rel="icon" href="assets/icon-512.png">
 <style>
 :root{
   --bg:#fbfafd; --ink:#1d1a2e; --muted:#5e5973; --card:#ffffff; --line:rgba(29,26,46,.10);
-  --brand1:#1F1A52; --brand2:#6B338C; --pill-bg:rgba(107,51,140,.10); --pill-ink:#52256e;
+  --brand1:#1F1A52; --brand2:#6B338C;
 }
 @media (prefers-color-scheme: dark){
-  :root{ --bg:#121018; --ink:#f0edf7; --muted:#a59fb8; --card:#1b1824; --line:rgba(240,237,247,.10);
-         --pill-bg:rgba(175,124,210,.16); --pill-ink:#d9bdf0; }
+  :root{ --bg:#121018; --ink:#f0edf7; --muted:#a59fb8; --card:#1b1824; --line:rgba(240,237,247,.10); }
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;
      background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
 .wrap{max-width:920px;margin:0 auto;padding:0 24px}
-header.hero{background:linear-gradient(135deg,var(--brand1),var(--brand2));color:#f6f3ff;
-            padding:88px 0 72px;text-align:center}
+header.hero{background:linear-gradient(135deg,var(--brand1),var(--brand2));color:#f6f3ff;padding:0 0 72px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.mark{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;color:#fff}
+.mark img{width:28px;height:28px;border-radius:7px}
+nav .links{display:flex;gap:22px;font-size:14px;color:rgba(246,243,255,.78)}
+nav .links a:hover{color:#fff}
+.hero-inner{text-align:center;padding-top:56px}
 .hero img.icon{width:108px;height:108px;border-radius:24px;box-shadow:0 18px 60px rgba(0,0,0,.35)}
 .hero h1{font-size:clamp(30px,5vw,46px);font-weight:700;letter-spacing:-.02em;margin:28px auto 14px;max-width:760px}
 .hero p.sub{font-size:clamp(16px,2.4vw,19px);color:rgba(246,243,255,.82);max-width:640px;margin:0 auto}
@@ -46,24 +52,40 @@ h2{font-size:26px;font-weight:700;letter-spacing:-.01em;margin-bottom:10px}
          padding:34px;text-align:center}
 .pricing .big{font-size:30px;font-weight:700}
 .pricing p{color:var(--muted);margin-top:6px}
-.links{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;justify-content:center}
-.links a{display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid var(--line);
-         color:var(--ink);text-decoration:none;font-size:15px;font-weight:550;background:var(--card)}
-.links a:hover{border-color:var(--brand2)}
-footer{border-top:1px solid var(--line);padding:34px 0 60px;color:var(--muted);font-size:14px;text-align:center}
-footer a{color:inherit}
+.links-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;justify-content:center}
+.links-row a{display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid var(--line);
+         color:var(--ink);font-size:15px;font-weight:550;background:var(--bg)}
+.links-row a:hover{border-color:var(--brand2)}
+.faq{max-width:680px;margin:18px auto 0}
+.faq>div{padding:18px 0;border-bottom:1px solid var(--line)}
+.faq>div:last-child{border-bottom:none}
+.faq h3{font-size:15.5px;font-weight:650;margin-bottom:4px}
+.faq p{font-size:14.5px;color:var(--muted)}
+.faq a{text-decoration:underline}
+.more{display:block;text-align:center;margin-top:18px;font-size:14.5px;color:var(--muted)}
+.more a{text-decoration:underline}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;font-size:13.5px;color:var(--muted);
+       display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+footer .links{display:flex;gap:18px}
+footer a:hover{color:var(--ink)}
 </style>
 </head>
 <body>
 
 <header class="hero">
   <div class="wrap">
-    <img class="icon" src="assets/icon-512.png" alt="DropSnooze app icon">
-    <h1>Snooze anything.<br>It comes back — and opens.</h1>
-    <p class="sub">Drag any file, link, note, or image onto your Mac's menu bar and pick a time.
-       It disappears — then comes back and opens the real thing, exactly when you asked.</p>
-    <span class="pill">Launching June 25, 2026 · Mac App Store</span>
-    <span class="pricepill">Free to try · $7.99 one-time · No subscription</span>
+    <nav>
+      <a class="mark" href="./"><img src="assets/icon-512.png" alt="">DropSnooze</a>
+      <span class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="press.html">Press</a></span>
+    </nav>
+    <div class="hero-inner">
+      <img class="icon" src="assets/icon-512.png" alt="DropSnooze app icon">
+      <h1>Snooze anything.<br>It comes back — and opens.</h1>
+      <p class="sub">Drag any file, link, note, or image onto your Mac's menu bar and pick a time.
+         It disappears — then comes back and opens the real thing, exactly when you asked.</p>
+      <span class="pill">Launching June 25, 2026 · Mac App Store</span>
+      <span class="pricepill">Free to try · $7.99 one-time · No subscription</span>
+    </div>
   </div>
 </header>
 
@@ -94,27 +116,42 @@ footer a{color:inherit}
     </div>
   </section>
 
-  <section>
+  <section style="padding-top:0">
+    <h2 style="text-align:center">Questions, answered</h2>
+    <div class="faq">
+      <div><h3>How is it different from shelf apps like Yoink or Dropover?</h3>
+        <p>Shelves hold things while you move them around. DropSnooze answers a different question — <em>when should this come back?</em> — and opens it at that time.</p></div>
+      <div><h3>Does it copy or move my files?</h3>
+        <p>No. Files stay where they are; security-scoped bookmarks reopen the original in place. Deleting in DropSnooze never deletes your file.</p></div>
+      <div><h3>Does it connect to the internet?</h3>
+        <p>The app makes zero network requests — no account, no analytics. The App Store privacy label is "Data Not Collected". See the <a href="privacy.html">privacy policy</a>.</p></div>
+      <div><h3>What does it cost?</h3>
+        <p>Free to try — stash 5 items. Unlimited is a one-time $7.99 purchase. No subscription, ever.</p></div>
+    </div>
+    <span class="more">More questions in <a href="support.html">Support &amp; FAQ</a> →</span>
+  </section>
+
+  <section style="padding-top:0">
     <div class="pricing">
       <div class="big">Free to try · $7.99 once</div>
       <p>Stash 5 things for free. One purchase unlocks unlimited — no subscription, ever.</p>
       <p>macOS 14+ · Apple silicon &amp; Intel · English &amp; 简体中文</p>
-      <div class="links">
-        <a href="https://github.com/baiyisn123/dropsnooze-support/blob/main/FAQ.md">FAQ</a>
-        <a href="https://github.com/baiyisn123/dropsnooze-support/blob/main/PRESS.md">Press kit</a>
-        <a href="https://github.com/baiyisn123/dropsnooze-support/blob/main/PRIVACY.md">Privacy policy</a>
-        <a href="mailto:sllbailuo@outlook.com">Support</a>
+      <div class="links-row">
+        <a href="support.html">Support &amp; FAQ</a>
+        <a href="press.html">Press kit</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="mailto:sllbailuo@outlook.com">Email me</a>
       </div>
     </div>
   </section>
 </div>
 
-<footer>
-  <div class="wrap">
-    DropSnooze — an independent Mac app · <a href="mailto:sllbailuo@outlook.com">sllbailuo@outlook.com</a><br>
-    This page loads nothing from third parties — like the app, it keeps to itself.
-  </div>
-</footer>
+<div class="wrap">
+  <footer>
+    <span>© 2026 DropSnooze · Bailuo</span>
+    <span class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="press.html">Press kit</a><a href="mailto:sllbailuo@outlook.com">Email</a></span>
+  </footer>
+</div>
 
 </body>
 </html>

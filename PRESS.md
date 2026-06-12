@@ -14,7 +14,7 @@
 | Availability | Mac App Store, all regions except mainland China and the EU |
 | App Store | Launching **June 25, 2026** — the link will appear here on launch day |
 | Privacy | Zero network requests; no account, no analytics; App Store privacy label "Data Not Collected"; App Sandbox |
-| Developer | Independent solo developer |
+| Developer | Bailuo — independent solo developer |
 | Support | https://github.com/baiyisn123/dropsnooze-support |
 | Privacy policy | https://github.com/baiyisn123/dropsnooze-support/blob/main/PRIVACY.md |
 
